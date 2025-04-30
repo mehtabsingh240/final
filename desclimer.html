@@ -5,39 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Disclaimer - Mehtab Singh</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
       background-color: #f4f4f4;
       color: #333;
     }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
+    /* Navbar */
+    .navbar {
       background-color: #444;
       display: flex;
-      justify-content: center;
-      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+      position: relative;
     }
 
-    nav a {
-      color: #fff;
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    .menu a {
+      color: white;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
     }
 
-    nav a:hover {
+    .menu a:hover {
       text-decoration: underline;
     }
 
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    /* Container */
     .container {
       max-width: 800px;
       margin: 40px auto;
@@ -49,47 +86,70 @@
       margin-bottom: 20px;
     }
 
+    h2 {
+      margin-top: 30px;
+      color: #444;
+    }
+
     p {
       line-height: 1.6;
       margin-bottom: 15px;
     }
 
+    /* Footer */
     footer {
       background-color: #333;
       color: #fff;
       text-align: center;
-      padding: 15px;
+      padding: 15px 20px;
       margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
-      nav {
+    /* Responsive */
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
       }
 
-      nav a {
-        margin: 8px 0;
+      .menu.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
       }
     }
   </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('active');
+    }
+  </script>
 </head>
 <body>
-<nav class="navbar">
+
+  <nav class="navbar">
     <div class="logo">
       <img src="images/logo-png.png" alt="Logo" />
       <div class="logo-text">choose your career</div>
     </div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="sci.html">Science</a>
       <a href="com.html">Commerce</a>
       <a href="arts.html">Arts</a>
       <a href="aboutus.html">About</a>
-      <a href="contectus.html">contectus</a>
-      <a href="desclimer.html">desclimer</a>
-
+      <a href="contactus.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
     </div>
   </nav>
 
@@ -97,13 +157,6 @@
     <h1>Disclaimer</h1>
     <p>Please read this disclaimer carefully.</p>
   </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
-    <a href="disclaimer.html">Disclaimer</a>
-  </nav>
 
   <div class="container">
     <h1>Website Disclaimer</h1>
