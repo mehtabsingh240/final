@@ -59,6 +59,13 @@
       font-style: italic;
     }
 
+    .menu-icon {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
     .navbar .menu {
       display: flex;
       flex-wrap: wrap;
@@ -75,11 +82,6 @@
 
     .navbar .menu a:hover {
       text-decoration: underline;
-    }
-
-    .navbar .menu .search-icon {
-      font-size: 18px;
-      cursor: pointer;
     }
 
     /* Stream Intro Section */
@@ -194,6 +196,11 @@
         width: 100%;
       }
 
+      .menu-icon {
+        display: block;
+        margin-top: 10px;
+      }
+
       .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -202,12 +209,18 @@
       .navbar .menu {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
-        margin-top: 10px;
+        width: 100%;
+        display: none;
+      }
+
+      .navbar .menu.show {
+        display: flex;
       }
 
       .navbar .menu a {
-        font-size: 14px;
+        padding: 10px 0;
+        font-size: 16px;
+        width: 100%;
       }
     }
 
@@ -225,14 +238,22 @@
       }
     }
   </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="logo">
       <img src="images/logo-png.png" alt="Logo" />
       <div class="logo-text">choose your career</div>
     </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="sci.html">Science</a>
@@ -266,7 +287,7 @@
       <h2>Career Options After Arts</h2>
       <ul>
         <b><li>Law</li></b>
-        <p>Law is a rewarding and impactful field for Arts students. By pursuing a degree in law, you can represent individuals or organizations, advocate for justice, and make significant contributions to the legal system. It’s a challenging yet fulfilling career option with diverse specializations such as criminal law, corporate law, and human rights.</p>
+        <p>Law is a rewarding and impactful field for Arts students...</p>
         <li>Corporate Lawyer</li>
         <li>Criminal Lawyer</li>
         <li>Human Rights Advocate</li>
@@ -275,7 +296,7 @@
         <br><br>
 
         <b><li>Journalism and Media</li></b>
-        <p>Journalism and media careers offer dynamic opportunities to report news, share stories, and influence public opinion. Whether you choose to work as a news anchor, reporter, or media specialist, the field of journalism is crucial for maintaining an informed society.</p>
+        <p>Journalism and media careers offer dynamic opportunities...</p>
         <li>News Reporter</li>
         <li>Content Writer</li>
         <li>Public Relations Officer</li>
@@ -284,7 +305,7 @@
         <br><br>
 
         <b><li>Education and Teaching</li></b>
-        <p>If you enjoy sharing knowledge and inspiring others, teaching could be your perfect career. Whether you choose to become a school teacher, a professor, or a private tutor, the education sector provides opportunities to shape young minds and contribute to society.</p>
+        <p>If you enjoy sharing knowledge and inspiring others...</p>
         <li>School Teacher</li>
         <li>University Professor</li>
         <li>Educational Consultant</li>
@@ -293,7 +314,7 @@
         <br><br>
 
         <b><li>Creative Arts (Design, Music, Theatre)</li></b>
-        <p>For those passionate about creativity and expression, the creative arts offer various career paths. You can work as a graphic designer, musician, or actor, bringing your artistic vision to life and influencing culture through your work.</p>
+        <p>For those passionate about creativity and expression...</p>
         <ul>
           <li>Graphic Designer</li>
           <li>Musician</li>
@@ -305,7 +326,7 @@
         <br><br>
 
         <b><li>Sociology and Psychology</li></b>
-        <p>Sociology and psychology allow you to understand human behavior, societal trends, and mental health. You can work as a counselor, social worker, or even a researcher, contributing to improving the well-being of individuals and communities.</p>
+        <p>Sociology and psychology allow you to understand...</p>
         <li>Social Worker</li>
         <li>Counselor</li>
         <li>Psychologist</li>
@@ -314,7 +335,7 @@
         <br><br>
 
         <b><li>Political Science and International Relations</li></b>
-        <p>Students interested in shaping policies, international relations, and public affairs often choose political science. It opens doors to careers in diplomacy, public service, and global organizations, where you can influence the course of history.</p>
+        <p>Students interested in shaping policies, international relations...</p>
         <li>Politician</li>
         <li>Diplomat</li>
         <li>Political Analyst</li>
