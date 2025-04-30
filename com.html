@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Commerce Stream</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: darkgoldenrod;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 26px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: darkgoldenrod;
+        padding: 10px;
+      }
+
+      .menu.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p, ul {
+      font-size: 1rem;
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    a {
+      color: darkgoldenrod;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .course {
+      background-color: #f9f9f9;
+      padding: 20px;
+      flex: 1 1 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo-png.png" alt="Logo" />
+      <div class="logo-text">choose your career</div>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="sci.html">Science</a>
+      <a href="com.html">Commerce</a>
+      <a href="arts.html">Arts</a>
+      <a href="aboutus.html">About</a>
+      <a href="contectus.html">contectus</a>
+      <a href="desclimer.html">desclimer</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Commerce Stream</h1>
+    <p>Your Guide to Careers in Commerce</p>
+  </header>
+
+  <section>
+    <h2>Introduction to Commerce Stream</h2>
+    <p>The Commerce stream offers a wide range of opportunities in business, finance, economics, and accounting. It builds skills in management, entrepreneurship, and corporate knowledge to thrive in various industries.</p>
+  </section>
+
+  <section>
+    <h2>Career Options After Commerce</h2>
+    <ul>
+      <li>
+        <b>Chartered Accountancy (CA)</b>
+        <p>Experts in financial management, auditing, and taxation. Opens doors in top firms and financial institutions.</p>
+        <ul>
+          <li>Tax Consultant</li>
+          <li>Auditor</li>
+          <li>Financial Analyst</li>
+          <li>Corporate Accountant</li>
+        </ul>
+        <p><a href="new idea/main/main/for commerce/Chartered .html" target="_blank">Learn more</a></p>
+      </li>
+      <li>
+        <b>Business Administration (BBA/MBA)</b>
+        <p>For aspiring leaders in corporations or entrepreneurs, this degree develops key business and strategy skills.</p>
+        <ul>
+          <li>Management Consultant</li>
+          <li>HR Manager</li>
+          <li>Marketing Manager</li>
+          <li>Project Manager</li>
+        </ul>
+        <p><a href="new idea/main/main/for commerce/Business.html" target="_blank">Learn more</a></p>
+      </li>
+      <li>
+        <b>Finance and Banking</b>
+        <p>Careers in investment banking, financial planning, and credit analysis. Great for number-savvy individuals.</p>
+        <ul>
+          <li>Investment Banker</li>
+          <li>Financial Planner</li>
+          <li>Credit Analyst</li>
+          <li>Risk Manager</li>
+        </ul>
+        <p><a href="new idea/main/main/for commerce/Finance .html" target="_blank">Learn more</a></p>
+      </li>
+      <li>
+        <b>Economics and Policy</b>
+        <p>Work as economists, policy advisors, and analysts to impact national and global economies.</p>
+        <ul>
+          <li>Economist</li>
+          <li>Policy Analyst</li>
+          <li>Market Research Analyst</li>
+          <li>Data Analyst</li>
+        </ul>
+        <p><a href="new idea/main/main/for commerce/Economics .html" target="_blank">Learn more</a></p>
+      </li>
+      <li>
+        <b>Entrepreneurship</b>
+        <p>Create and lead businesses from the ground up. Best for those with passion and innovation.</p>
+        <ul>
+          <li>Startup Founder</li>
+          <li>Business Development Manager</li>
+          <li>Product Manager</li>
+          <li>Investor</li>
+        </ul>
+        <p><a href="new idea/main/main/for commerce/Entrepreneurship.html" target="_blank">Learn more</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Popular Courses in Commerce</h2>
+    <div class="courses">
+      <div class="course">
+        <h3>Chartered Accountancy (CA)</h3>
+        <p>Prestigious qualification in accounting and finance, ideal for detail-oriented students.</p>
+      </div>
+      <div class="course">
+        <h3>Business Administration (BBA/MBA)</h3>
+        <p>Learn leadership, marketing, and strategy in the corporate world.</p>
+      </div>
+      <div class="course">
+        <h3>Finance & Banking</h3>
+        <p>Explore financial markets, investment, and banking systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Choose Your Career. All rights reserved.
+  </footer>
+
+</body>
+</html>

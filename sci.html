@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Stream</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: darkgoldenrod;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 26px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: darkgoldenrod;
+        padding: 10px;
+      }
+
+      .menu.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p, ul {
+      font-size: 1rem;
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    a {
+      color: darkgoldenrod;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .course {
+      background-color: #f9f9f9;
+      padding: 20px;
+      flex: 1 1 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo-png.png" alt="Logo" />
+      <div class="logo-text">choose your career</div>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="sci.html">Science</a>
+      <a href="com.html">Commerce</a>
+      <a href="arts.html">Arts</a>
+      <a href="aboutus.html">About</a>
+      <a href="contectus.html">contectus</a>
+      <a href="desclimer.html">desclimer</a>
+
+    </div>
+  </nav>
+
+  <header>
+    <h1>Science Stream</h1>
+  </header>
+
+  <section>
+    <h2>Introduction of Science Stream:</h2>
+    <p>Science stream is a very popular and best field among students after class 10th. There are many career options available for science stream students after 12th. Medical and engineering are two most popular and preferred career options for science stream students. The major subjects in science stream are physics, chemistry, biology, mathematics, computer science and English.</p>
+  </section>
+
+  <section>
+    <h2>Career Options After 12th Science:</h2>
+    <ul>
+      <li><b>Engineering</b> – Mechanical, Civil, Computer Science, Electronics, etc.</li>
+      <p><a href="new idea/main/main/for sci/engineering.html" target="_main">Click here</a></p>
+
+      <li><b>Medical Sciences</b> – MBBS, BDS, BAMS, BHMS, Nursing, etc.</li>
+      <p><a href="new idea/main/main/for sci/medical.html" target="_main">Click here</a></p>
+
+      <li><b>Research and Development</b> – Physics, Chemistry, Biology</li>
+      <p><a href="new idea/main/main/for sci/Research.html" target="_main">Click here</a></p>
+
+      <li><b>Aerospace and Aviation</b> – Pilot training, Aeronautical Engineering</li>
+      <p><a href="new idea/main/main/for sci/Aerospace.html" target="_main">Click here</a></p>
+
+      <li><b>Environmental Science</b> – Ecology, Wildlife, Forestry</li>
+      <p><a href="new idea/main/main/for sci/enviourment.html" target="_main">Click here</a></p>
+
+      <li><b>Data Science and Artificial Intelligence</b></li>
+      <p><a href="new idea/main/main/for sci/datasci.html" target="_main">Click here</a></p>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Popular Courses in Science Stream:</h2>
+    <div class="courses">
+      <div class="course">
+        <h3>Engineering</h3>
+        <p>Computer Science, Mechanical, Civil, Electrical</p>
+      </div>
+      <div class="course">
+        <h3>Medical</h3>
+        <p>MBBS, BDS, BAMS, BHMS, Nursing</p>
+      </div>
+      <div class="course">
+        <h3>Data Science</h3>
+        <p>AI, Machine Learning, Data Analytics</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Choose Your Career. All rights reserved.
+  </footer>
+</body>
+</html>
