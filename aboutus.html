@@ -92,6 +92,34 @@
       margin-bottom: 15px;
     }
 
+    /* Profile Styles */
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .profile-info {
+      max-width: 600px;
+    }
+
+    .profile-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .profile-info p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
     /* Footer */
     footer {
       background-color: #333;
@@ -135,7 +163,7 @@
   <nav class="navbar">
     <div class="logo">
       <img src="images/logo-png.png" alt="Logo" />
-      <div class="logo-text">choose your career</div>
+      <div class="logo-text">Choose Your Career</div>
     </div>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <div class="menu">
@@ -144,8 +172,8 @@
       <a href="com.html">Commerce</a>
       <a href="arts.html">Arts</a>
       <a href="aboutus.html">About</a>
-      <a href="contectus.html">Contact Us</a>
-      <a href="desclimer.html">Disclaimer</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="disclaimer.html">Disclaimer</a>
     </div>
   </nav>
 
@@ -155,10 +183,25 @@
   </header>
 
   <div class="container">
-    <h1>Welcome to Again-Check</h1>
-    <p>This website is built by <strong>Mehtab Singh</strong> as a learning and exploration platform to showcase simple and effective web development projects.</p>
-    <p>Our goal is to provide clean and understandable code examples, helpful guides, and a growing set of educational tools for those just starting out in web development.</p>
-    <p>If you are curious, inspired, or just getting started, we hope our work helps guide your journey into the digital world!</p>
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Mehtab Singh" />
+      <div class="profile-info">
+        <h2>Hi, I'm Mehtab Singh</h2>
+        <p>I'm a passionate web developer who loves to build interactive and educational websites. My goal is to help students find the right career paths with updated resources and career guidance. Through this website, I aim to share my knowledge and experiences to inspire and assist others who are beginning their journey into the digital world.</p>
+        
+        <p>As a lifelong learner, I believe in staying up-to-date with modern career trends. This platform is continually updated to reflect the latest educational paths and career options, so you can be sure you're making informed decisions.</p>
+
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:mehtabsingh2k7@gmail.com">mehtabsingh2k7@gmail.com</a></p>
+        <p>Phone: <a href="tel:+91 9877084642">+91 9877084642</a></p>
+      </div>
+    </div>
+
+    <!-- More About Me Section -->
+    <h1>Our Mission</h1>
+    <p>This website is built to serve students looking for career advice after completing their schooling. Whether you're unsure about what to do after 12th grade or looking for detailed guidance on various career fields, our platform has you covered.</p>
+    <p>By providing structured career paths, courses, and the latest updates, we strive to help you make informed decisions for your future.</p>
   </div>
 
   <footer>
