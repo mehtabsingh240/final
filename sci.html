@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Science Stream</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3994761825085721"
-     crossorigin="anonymous"></script>
   <style>
     * {
       margin: 0;
@@ -85,7 +83,7 @@
     }
 
     header {
-      background-color: #333;
+      background-color:black;
       color: white;
       padding: 30px 10px;
       text-align: center;
@@ -153,6 +151,7 @@
     function toggleMenu() {
       document.querySelector('.menu').classList.toggle('show');
     }
+    
   </script>
 </head>
 <body>
@@ -160,7 +159,7 @@
   <nav class="navbar">
     <div class="logo">
       <img src="images/logo-png.png" alt="Logo" />
-      <div class="logo-text">  <a href="index.html" style="color: white;" >choose your career</a></div>
+      <div class="logo-text">choose your career</div>
     </div>
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="menu">
@@ -169,105 +168,134 @@
       <a href="com.html">Commerce</a>
       <a href="arts.html">Arts</a>
       <a href="aboutus.html">About</a>
-      <a href="contectus.html">Contact Us</a>
-      <a href="desclimer.html">Disclaimer</a>
+      <a href="contectus.html">contectus</a>
+      <a href="desclimer.html">desclimer</a>
 
     </div>
   </nav>
 
   <header>
     <h1>Science Stream</h1>
-  </header>
 
+  </header>
+ 
   <section>
     <h2>Introduction of Science Stream:</h2>
     <p>Science stream is a very popular and best field among students after class 10th. There are many career options available for science stream students after 12th. Medical and engineering are two most popular and preferred career options for science stream students. The major subjects in science stream are physics, chemistry, biology, mathematics, computer science and English.</p>
   </section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Countdown Button</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      text-align: center;
-    }
-
-    #btn1, #btn2 {
-      padding: 15px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    #btn1 {
-      background-color: #007bff;
-      color: white;
-    }
-
-    #btn1:disabled {
-      background-color: #6c757d;
-      cursor: not-allowed;
-    }
-
-    #btn2 {
-      background-color: #28a745;
-      color: white;
-      display: none;
-      margin-top: 20px;
-    }
-
-  
-  </style>
-</head>
-<body>
-
-  <button id="btn1" onclick="startCountdown()">Get Video Link</button>
-
-  <div id="bottomArea">
-    <a href="https://www.profitableratecpm.com/v36cxep58t?key=e94748c1f3543de24543c2614f54c071" target="_blank">
-      <button id="btn2">Get Link</button>
-    </a>
-  </div>
-
-  <script>
-    function startCountdown() {
-      const btn1 = document.getElementById("btn1");
-      const btn2 = document.getElementById("btn2");
-      let timeLeft = 5;
-
-      btn1.disabled = true;
-      btn1.textContent = `Wait ${timeLeft}s`;
-
-      const interval = setInterval(() => {
-        timeLeft--;
-        btn1.textContent = `Wait ${timeLeft}s`;
-
-        if (timeLeft <= 0) {
-          clearInterval(interval);
-          btn1.style.display = "none";
-          btn2.style.display = "inline-block";
+  <img src="images/lab.jpg" alt="Science Stream Banner"
+  style="width: 300px; max-width: 90%; height: auto; margin-top: 15px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8"></meta>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+      <title>Countdown Button</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 40px;
+          text-align: center;
         }
-      }, 1000);
-    }
-  </script>
-
-</body>
-</html>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JW4EH0H2L7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JW4EH0H2L7');
-</script>
+    
+        #btn1, #btn2 {
+          padding: 15px 30px;
+          font-size: 18px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+    
+        #btn1 {
+          background-color: #007bff;
+          color: white;
+        }
+    
+        #btn1:disabled {
+          background-color: #6c757d;
+          cursor: not-allowed;
+        }
+    
+        #btn2 {
+          background-color: #28a745;
+          color: white;
+          display: none; /* hidden by default */
+          margin-top: 20px;
+        }
+    
+        /* Footer styling */
+        footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          background-color: #f1f1f1;
+          padding: 10px;
+          text-align: center;
+          font-size: 14px;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <button id="btn1" onclick="startCountdown()">Get Video Link</button>
+    
+      <div id="bottomArea">
+        <button id="btn2">Get Link</button>
+      </div>
+    
+      <!-- Footer -->
+      <footer>
+        <p>Footer Content</p>
+      </footer>
+    
+      <script>
+        function startCountdown() {
+          const btn1 = document.getElementById("btn1");
+          const btn2 = document.getElementById("btn2");
+          let timeLeft = 15;
+    
+          btn1.disabled = true;
+          btn1.textContent = `Wait ${timeLeft}s`;
+    
+          const interval = setInterval(() => {
+            timeLeft--;
+            btn1.textContent = `Wait ${timeLeft}s`;
+    
+            if (timeLeft <= 0) {
+              clearInterval(interval);
+              btn1.style.display = "none";  // hide the first button
+              btn2.style.display = "inline-block"; // show the second button
+    
+              // Scroll the page automatically to the second button
+              window.scrollTo({
+                top: document.body.scrollHeight - 300, // Adjust the offset from the bottom
+                behavior: "smooth"
+              });
+            }
+          }, 1000);
+        }
+      </script>
+    
+    </body>
+    </html>
+    
+    
+  <!-- AD BANNER: Place this wherever you'd like the ad to appear -->
+  <div class="ad-banner">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '0fc49cb4e2928b6447af6c2d3990d54f',
+        'format' : 'iframe',
+        'height' : 60,
+        'width' : 468,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/0fc49cb4e2928b6447af6c2d3990d54f/invoke.js"></script>
+  </div>
+    
+    
+    
+    
   <section>
     <h2>Career Options After 12th Science:</h2>
     <ul>
@@ -290,122 +318,9 @@
       <p><a href="new idea/main/main/for sci/datasci.html" target="_main">Click here</a></p>
     </ul>
   </section>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3994761825085721"
-     crossorigin="anonymous"></script>
-<!-- before post -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3994761825085721"
-     data-ad-slot="6624015418"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Careers in PCB and PCM</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f9fb;
-      color: #333;
-    }
 
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin-left: 0; /* align left */
-      margin-right: auto;
-    }
-
-    h1, h2 {
-      color: #1e88e5;
-    }
-
-    .section {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 15px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Career Paths After 12th - PCB & PCM</h1>
-
-    <div class="section">
-      <h2>🔬 PCB (Physics, Chemistry, Biology)</h2>
-      <p>If you love biology and want to help people or explore life sciences, PCB opens doors to the medical and research world.</p>
-      <h3>Popular Career Options:</h3>
-      <ul>
-        <li>👨‍⚕️ Doctor (MBBS)</li>
-        <li>🦷 Dentist (BDS)</li>
-        <li>🌿 Ayurvedic or Homeopathy Doctor (BAMS / BHMS)</li>
-        <li>🧪 Biotechnologist / Microbiologist</li>
-        <li>💊 Pharmacist (B.Pharm)</li>
-        <li>🐾 Veterinary Doctor</li>
-        <li>🕵️ Forensic Scientist</li>
-        <li>🌎 Environmental Scientist</li>
-        <li>🧬 Geneticist</li>
-        <li>🧑‍⚕️ Physiotherapist</li>
-      </ul>
-      <h3>What You Need:</h3>
-      <ul>
-        <li>Strong interest in biology and life sciences</li>
-        <li>Good memory and focus</li>
-        <li>Compassion and care for others</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>📐 PCM (Physics, Chemistry, Mathematics)</h2>
-      <p>If you're a problem-solver who enjoys logic and technology, PCM can take you into exciting careers in engineering, aviation, and more.</p>
-      <h3>Popular Career Options:</h3>
-      <ul>
-        <li>💻 Engineer (B.Tech / B.E)</li>
-        <li>🏛 Architect (B.Arch)</li>
-        <li>✈️ Pilot / Aviation</li>
-        <li>⚓ Merchant Navy</li>
-        <li>📊 Data Scientist / AI & ML Expert</li>
-        <li>🔬 Physicist / Mathematician</li>
-        <li>🧑‍💻 Software Developer</li>
-        <li>🪖 Indian Armed Forces (via NDA)</li>
-        <li>📈 Statistician</li>
-      </ul>
-      <h3>What You Need:</h3>
-      <ul>
-        <li>Strong skills in maths and logic</li>
-        <li>Good problem-solving ability</li>
-        <li>Passion for tech, numbers, or innovation</li>
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
-
-  <h2>Popular Courses in Science Stream:</h2>
+  <section>
+    <h2>Popular Courses in Science Stream:</h2>
     <div class="courses">
       <div class="course">
         <h3>Engineering</h3>
