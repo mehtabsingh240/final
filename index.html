@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Career Guidance for 12th Graders</title>
   <link rel="stylesheet" href="styles.css" />
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3994761825085721"
-     crossorigin="anonymous"></script>
-<link rel="icon" href="images/logo-png.png" type="image/png">
- <script type="application/ld+json">
+  <link rel="icon" href="images/logo-png.png" type="image/png">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -29,25 +27,17 @@
     
 </head>
 <body>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JW4EH0H2L7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-JW4EH0H2L7');
-</script>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <img src="images/logo-png.png"  loading="lazy"   alt="Logo" />
-      <div class="logo-text">       <a href="index.html" style="color: white;" >choose your career</a>
-</div>
+      <img src="images/logo-png.png" alt="Logo" />
+      <div class="logo-text">      <a href="index.html" style="color: white;" >choose your career</a>
+      </div>
     </div>
     <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     <div class="menu" id="nav-links">
-      <a href="index.html">Home</a>
+      <a href="course.html">Home</a>
       <a href="sci.html">Science</a>
       <a href="com.html">Commerce</a>
       <a href="arts.html">Arts</a>
@@ -73,49 +63,107 @@
       <p>We provide guidance to 12th-grade students to choose the right courses in Science, Commerce, and Arts. AI-powered career guidance, how to choose the right career, and career change advice for 2025.</p>
     </div>
   </section>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3994761825085721"
-     crossorigin="anonymous"></script>
-<!-- before post -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3994761825085721"
-     data-ad-slot="6624015418"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8"></meta>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+      <title>Countdown Button</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 40px;
+          text-align: center;
+        }
+    
+        #btn1, #btn2 {
+          padding: 15px 30px;
+          font-size: 18px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+    
+        #btn1 {
+          background-color: #007bff;
+          color: white;
+        }
+    
+        #btn1:disabled {
+          background-color: #6c757d;
+          cursor: not-allowed;
+        }
+    
+        #btn2 {
+          background-color: #28a745;
+          color: white;
+          display: none; /* hidden by default */
+          margin-top: 20px;
+        }
+    
+       
+      </style>
+    </head>
+    <body>
+    
+      <button id="btn1" onclick="startCountdown()">Get Video Link</button>
+    
+      <div id="bottomArea">
+        <button id="btn2">Get Link</button>
+      </div>
+    
+     
+    
+      <script>
+        function startCountdown() {
+          const btn1 = document.getElementById("btn1");
+          const btn2 = document.getElementById("btn2");
+          let timeLeft = 15;
+    
+          btn1.disabled = true;
+          btn1.textContent = `Wait ${timeLeft}s`;
+    
+          const interval = setInterval(() => {
+            timeLeft--;
+            btn1.textContent = `Wait ${timeLeft}s`;
+    
+            if (timeLeft <= 0) {
+              clearInterval(interval);
+              btn1.style.display = "none";  // hide the first button
+              btn2.style.display = "inline-block"; // show the second button
+    
+              // Scroll the page automatically to the second button
+              window.scrollTo({
+                top: document.body.scrollHeight - 300, // Adjust the offset from the bottom
+                behavior: "smooth"
+              });
+            }
+          }, 1000);
+        }
+      </script>
+    
+    </body>
+    </html>
+    
   <!-- Stream Sections -->
   <section class="streams">
     <div class="stream">
-      <a href="sci.html"><img src="images/sci.jpg" loading="lazy" alt="Science Stream" /></a>
+      <a href="sci.html"><img src="images/sci.jpg" alt="Science Stream" /></a>
       <h3>career option in Science Stream after 12</h3>
       <p>Explore courses in Engineering, Medical Sciences, and more.</p>
     </div>
     <div class="stream">
-      <a href="com.html"><img src="images/com.jpg" loading="lazy" alt="Commerce Stream" /></a>
+      <a href="com.html"><img src="images/com.jpg" alt="Commerce Stream" /></a>
       <h3>career option in Commerce Stream after 12</h3>
       <p>Discover careers in Business, Economics, Accounting, and more.</p>
     </div>
     <div class="stream">
-      <a href="arts.html"><img src="images/arts.jpg" loading="lazy" alt="Arts Stream" /></a>
+      <a href="arts.html"><img src="images/arts.jpg" alt="Arts Stream" /></a>
       <h3> career option in Arts Stream after 12</h3>
       <p>Choose from a variety of creative and humanities-based courses.</p>
     </div>
     
   </section>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3994761825085721"
-     crossorigin="anonymous"></script>
-<!-- before post -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3994761825085721"
-     data-ad-slot="6624015418"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
   <!-- Career Options Section -->
   <section class="career-list">
     <div class="info-container">
@@ -191,21 +239,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3994761825085721"
-     crossorigin="anonymous"></script>
-<!-- before post -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3994761825085721"
-     data-ad-slot="6624015418"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 <header>
-  <h3>Which course after 12 has a highest salary?</h3> 
-<br>  <h1>Top High Salary Courses After 12th</h1>
+    <h1>Top High Salary Courses After 12th</h1>
 </header>
 
 <main>
@@ -259,10 +295,7 @@
 
   <section class="career-paragraph">
     <div class="info-container">
-      <h2>"Which career is best after 12th?
-"</h2>
-      <br> <h4>How can I choose a career?
-</h4>
+      <h2>How to Choose a Career After 12th</h2>
       <p>
         Deciding on the right <strong>career after 12th</strong> can feel overwhelming, but it’s also a journey full of exciting possibilities. Today, the world is full of opportunities, and your <strong>career after 12th</strong> doesn't have to be limited to just engineering or medicine. You can explore a <strong>career after 12th</strong> in <strong>AI</strong>, a field that's shaping the future with intelligent machines. If numbers and markets interest you, then a <strong>career after 12th</strong> in <strong>finance</strong>, <strong>economics</strong>, or even the <strong>stock market</strong> could be the right fit. Many students choose a <strong>career after 12th</strong> in <strong>commerce</strong>, especially if they enjoy business, trade, or management studies.
       </p>
@@ -280,7 +313,23 @@
       </p>
     </div>
   </section>
-  
+  <!-- Button with no link initially -->
+<button id="myButton"
+onclick="window.location.href='https://www.profitableratecpm.com/nysqkv07bx?key=6dcc630fb89faedde466cc0ec411ca06';"
+style="display: none; padding: 16px 32px; font-size: 18px; font-weight: bold; background-color: #1e40af; color: white; border: none; border-radius: 8px; cursor: pointer;">
+Click Me!
+</button>
+
+<script>
+// Set a timer to show the button after 12 seconds
+setTimeout(function () {
+  document.getElementById('myButton').style.display = 'inline-block';
+}, 12000); // 12000 milliseconds = 12 seconds
+</script>
+
+
+
+
 <br>
 <br>
 <br>
@@ -303,22 +352,20 @@
           <li><a href="sci.html">Science</a></li>
           <li><a href="com.html">Commerce</a></li>
           <li><a href="arts.html">Arts</a></li>
-          <li><a href="contectus.html">Contact us</a></li>
-        <li><a href="Privacy Policy
-.html">Privacy Policy
-</a></li>
+          <li><a href="contectus.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Contact Us</h3>
-        <p>Email: mehtabsingh2k7@gmail.com</p>
-        <p>Phone: +91 9877084642</p>
-        <p>Address: Punjab, Jalandhar, District Nakoder, 144041, India</p>
+        <p>Email: info@career-guide.com</p>
+        <p>Phone: +91 123 456 7890</p>
+        <p>Address: 123 Career St., New Delhi, India</p>
       </div>
       <div class="footer-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-      
+       
+          
           <a href="https://www.instagram.com/mehtab_767_?igsh=dDJlYjhwbnkzY2F0"><img src="images/insta logo.jpeg" alt="Instagram" /></a>
         </div>
       </div>
