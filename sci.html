@@ -183,7 +183,83 @@
     <h2>Introduction of Science Stream:</h2>
     <p>Science stream is a very popular and best field among students after class 10th. There are many career options available for science stream students after 12th. Medical and engineering are two most popular and preferred career options for science stream students. The major subjects in science stream are physics, chemistry, biology, mathematics, computer science and English.</p>
   </section>
-<!-- Google tag (gtag.js) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Countdown Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+
+    #btn1, #btn2 {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #btn1 {
+      background-color: #007bff;
+      color: white;
+    }
+
+    #btn1:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+
+    #btn2 {
+      background-color: #28a745;
+      color: white;
+      display: none;
+      margin-top: 20px;
+    }
+
+  
+  </style>
+</head>
+<body>
+
+  <button id="btn1" onclick="startCountdown()">Get Video Link</button>
+
+  <div id="bottomArea">
+    <a href="https://www.profitableratecpm.com/v36cxep58t?key=e94748c1f3543de24543c2614f54c071" target="_blank">
+      <button id="btn2">Get Link</button>
+    </a>
+  </div>
+
+  <script>
+    function startCountdown() {
+      const btn1 = document.getElementById("btn1");
+      const btn2 = document.getElementById("btn2");
+      let timeLeft = 5;
+
+      btn1.disabled = true;
+      btn1.textContent = `Wait ${timeLeft}s`;
+
+      const interval = setInterval(() => {
+        timeLeft--;
+        btn1.textContent = `Wait ${timeLeft}s`;
+
+        if (timeLeft <= 0) {
+          clearInterval(interval);
+          btn1.style.display = "none";
+          btn2.style.display = "inline-block";
+        }
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>
+
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JW4EH0H2L7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
