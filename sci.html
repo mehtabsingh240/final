@@ -248,31 +248,13 @@
       </footer>
     
       <script>
-        function startCountdown() {
-          const btn1 = document.getElementById("btn1");
-          const btn2 = document.getElementById("btn2");
-          let timeLeft = 15;
-    
-          btn1.disabled = true;
-          btn1.textContent = `Wait ${timeLeft}s`;
-    
-          const interval = setInterval(() => {
-            timeLeft--;
-            btn1.textContent = `Wait ${timeLeft}s`;
-    
-            if (timeLeft <= 0) {
-              clearInterval(interval);
-              btn1.style.display = "none";  // hide the first button
-              btn2.style.display = "inline-block"; // show the second button
-    
-              // Scroll the page automatically to the second button
-              window.scrollTo({
-                top: document.body.scrollHeight - 300, // Adjust the offset from the bottom
-                behavior: "smooth"
-              });
-            }
-          }, 1000);
-        }
+      <!-- Button with no link initially -->
+<button id="myButton"
+onclick="window.location.href='sci.html';"
+style="display: none; padding: 16px 32px; font-size: 18px; font-weight: bold; background-color: #1e40af; color: white; border: none; border-radius: 8px; cursor: pointer;">
+Click Me!
+</button>
+
       </script>
     
     </body>
