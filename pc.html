@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top10 Blog Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .content {
+      flex: 3;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .post-card {
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .post-card:hover {
+      transform: scale(1.02);
+    }
+
+    .post-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 15px;
+    }
+
+    .post-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .excerpt {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    .sidebar-section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .sidebar-section h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .sidebar-section input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 3px;
+    }
+
+    .sidebar-section button {
+      width: 100%;
+      padding: 8px;
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .sidebar-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar-section li {
+      margin-bottom: 8px;
+    }
+
+    .sidebar-section a {
+      text-decoration: none;
+      color: #1a1a1a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .navbar nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    .navbar nav a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="logo">Top10Verse</div>
+          <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <a href="android.html">Android</a>
+              <div class="dropdown-content">
+               
+              </div>
+           
+              <div class="dropdown">
+                <a href="pc.html">PC</a>
+            </div>
+            <div class="dropdown">
+              <a href="#">Adventure</a>
+              <div class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Survival</a>
+              <div class="dropdown-content">
+               </a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Open world</a>
+              <div class="dropdown-content">
+                          </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Shooting</a>
+              <div class="dropdown-content">
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+        <h1>Top10Verse Blog</h1>
+        <p>Explore top 10s across games, gadgets, apps, and more</p>
+      </header>
+  <div class="container">
+    <!-- Blog Posts -->
+    <div class="content">
+      <div class="post-card">
+        <a href="games/android/post1.html">learn more</a>
+        <img src="https://via.placeholder.com/400x200?text=Post+1" alt="Post 1">
+        <div class="post-content">
+          <div class="post-title">Up Liquidation Review – A Game-Changer for Resellers</div>
+          <div class="meta">By Admin | May 2025</div>
+          <div class="excerpt">Discover how this platform helps you flip products and make profit...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+2" alt="Post 2">
+        <div class="post-content">
+          <div class="post-title">The Ultimate Guide to Renting Tech in Croatia</div>
+          <div class="meta">By John Doe | May 2025</div>
+          <div class="excerpt">Travel smarter with this detailed guide on renting gadgets...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+3" alt="Post 3">
+        <div class="post-content">
+          <div class="post-title">Best PC Games of 2025 – Must-Have Titles</div>
+          <div class="meta">By Admin | May 2025</div>
+          <div class="excerpt">Explore the top 10 PC games to play in 2025 for non-stop fun...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+4" alt="Post 4">
+        <div class="post-content">
+          <div class="post-title">Top 10 Budget Smartphones in 2025</div>
+          <div class="meta">By Sarah Lee | May 2025</div>
+          <div class="excerpt">Find the best budget smartphones that don't compromise on quality...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+5" alt="Post 5">
+        <div class="post-content">
+          <div class="post-title">Top 10 Most Popular Bollywood Movies in 2025</div>
+          <div class="meta">By Rishi Kumar | May 2025</div>
+          <div class="excerpt">Catch up with the latest blockbusters and critically acclaimed films...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+6" alt="Post 6">
+        <div class="post-content">
+          <div class="post-title">Best VPNs for 2025 – Protect Your Privacy Online</div>
+          <div class="meta">By Mark Smith | May 2025</div>
+          <div class="excerpt">Secure your internet connection with these top-rated VPNs...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+7" alt="Post 7">
+        <div class="post-content">
+          <div class="post-title">Top 10 Best Singers of 2025 – Who’s On the Charts?</div>
+          <div class="meta">By Emily White | May 2025</div>
+          <div class="excerpt">From rising stars to legendary icons, discover the best of 2025...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+8" alt="Post 8">
+        <div class="post-content">
+          <div class="post-title">How to Choose the Right Gaming Laptop</div>
+          <div class="meta">By John Doe | May 2025</div>
+          <div class="excerpt">Learn how to pick the best gaming laptop for your needs...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+9" alt="Post 9">
+        <div class="post-content">
+          <div class="post-title">Top 10 Must-Have Mobile Apps in 2025</div>
+          <div class="meta">By Mark Smith | May 2025</div>
+          <div class="excerpt">Check out the top apps to make your life easier in 2025...</div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="https://via.placeholder.com/400x200?text=Post+10" alt="Post 10">
+        <div class="post-content">
+          <div class="post-title">Exploring Hollywood’s Top Movies of 2025</div>
+          <div class="meta">By Sarah Lee | May 2025</div>
+          <div class="excerpt">A look into the best movies from Hollywood this year...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3>Search Anything</h3>
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Recently Published</h3>
+        <ul>
+          <li><a href="#">Up Liquidation Review – A Game-Changer for Resellers</a></li>
+          <li><a href="#">The Ultimate Guide to Renting Tech in Croatia</a></li>
+          <li><a href="#">Best PC Games of 2025 – Must-Have Titles</a></li>
+          <li><a href="#">Top 10 Budget Smartphones in 2025</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    &copy; 2025 Top10Verse | All rights reserved.
+  </footer>
+</body>
+</html>
